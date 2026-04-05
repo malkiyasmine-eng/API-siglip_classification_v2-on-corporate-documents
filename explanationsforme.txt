@@ -1,0 +1,13 @@
+app.py → API server (FastAPI)
+classifier.py → AI model + inference logic (SigLIP)
+test_api.py → tests your API like a client
+
+User sends image → FastAPI (/classify)
+→ classifier.py processes image
+→ SigLIP compares image vs text prompts
+→ returns best document class
+
+1. Client program (API caller) → test_api.py or any user app
+Server program → app.py + classifier.py
+
+test_api.py This file is used to validate your AI API before deployment or reporting
